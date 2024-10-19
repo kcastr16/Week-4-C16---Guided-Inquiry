@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+#board {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.black {
+    background-color: black;
+    width: 50px;
+}
+
+.white {
+    background-color: white;
+    color: white;
+}

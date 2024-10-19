@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.red {
+    background-color: red;
+    color: red;
+    width: 700px;
+    height: 30px;
+    z-index: -1;
+    position: relative;
+}
+
+
+.white {
+    background-color: white;
+    color: white;
+    width: 700px;
+    height: 30px;
+    z-index: -1;
+    position: relative;
+}
+
+img {
+    width: 300px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 1.5px;
+    margin-top: 1.5px;
+}
+
+.flag {
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 24%;
+    border: 6px solid black;
+    width: 50%;
+}
+
+.flag table {
+    width: 100%;
+}
+
+
