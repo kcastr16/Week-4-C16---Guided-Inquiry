@@ -5,36 +5,71 @@
     font-family: Afacad Flux;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+  }
+
 .navdiv {
     display: flex;
-    background-color: black;
-    justify-content: center;
+    background-color: rgb(69, 116, 55);
+    justify-content: left;
     align-items: center;
+    padding-left: 40px;
     height: 6%;
     color: white;
 }
 
+.navdiv a {
+    color: white;
+    list-style: none;
+    font-weight: bold;
+    padding: 15px;
+    transition: all 0.5s ease;
+
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color:black;
+    text-decoration-thickness:4px;
+    text-underline-offset: .25em;
+    color: #d2940f;
+  }
+
+  .active a {
+    color: #d2940f;
+  }
+
+.navdiv a:hover {
+    background-color: black;
+    color: #d2940f;
+    border: 1px solid black;
+    padding: 10px;
+    transition: all 0.5s ease;
+  }
+
 .main-head {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 .container  {
-    background: linear-gradient(45deg, blueviolet, lightgreen );
     padding: 15px 9%;
     padding-bottom: 100px;
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(270px, 1fr));
-    gap: 15px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
 }
 
 .box {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
     border-radius: 5px;
+    height: 380px;
     background: #fff;
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px 60px;
 }
 
 img {
@@ -44,8 +79,59 @@ img {
 
 .box h2{
     color: #444;
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 22px;
     text-decoration: underline;
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 3px;
+}
+
+.box p {
+    padding-bottom: 10px;
+}
+
+#main-page {
+    background-color: rgb(0, 255, 136);
+    height: 100%vh;
+}
+
+.btn {
+    background-color: #dba4a4;
+    font-size: small;
+    margin-top: 100px;
+    padding: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: blue;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #d2940f;
+    border: 1px solid black;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+#homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.home-head {
+    margin-bottom: 20px;
+}
+
+#homepage p {
+    margin-bottom: 20px;
+    text-decoration-line:underline;
+}
+
+#homepage img {
+    border-radius: 200px;
+    width: 80%;
 }
